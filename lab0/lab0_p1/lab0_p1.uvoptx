@@ -142,22 +142,6 @@
         <Bp>
           <Number>0</Number>
           <Type>0</Type>
-          <LineNumber>1</LineNumber>
-          <EnabledFlag>1</EnabledFlag>
-          <Address>0</Address>
-          <ByteObject>0</ByteObject>
-          <HtxType>0</HtxType>
-          <ManyObjects>0</ManyObjects>
-          <SizeOfObject>0</SizeOfObject>
-          <BreakByAccess>0</BreakByAccess>
-          <BreakIfRCount>0</BreakIfRCount>
-          <Filename>.\lab0_p1.s</Filename>
-          <ExecCommand></ExecCommand>
-          <Expression></Expression>
-        </Bp>
-        <Bp>
-          <Number>1</Number>
-          <Type>0</Type>
           <LineNumber>61</LineNumber>
           <EnabledFlag>1</EnabledFlag>
           <Address>976</Address>
@@ -170,6 +154,22 @@
           <Filename>RTE/Device/ARMCM3/system_ARMCM3.c</Filename>
           <ExecCommand></ExecCommand>
           <Expression>\\lab0_p1\RTE/Device/ARMCM3/system_ARMCM3.c\61</Expression>
+        </Bp>
+        <Bp>
+          <Number>1</Number>
+          <Type>0</Type>
+          <LineNumber>66</LineNumber>
+          <EnabledFlag>1</EnabledFlag>
+          <Address>1098</Address>
+          <ByteObject>0</ByteObject>
+          <HtxType>0</HtxType>
+          <ManyObjects>0</ManyObjects>
+          <SizeOfObject>0</SizeOfObject>
+          <BreakByAccess>0</BreakByAccess>
+          <BreakIfRCount>1</BreakIfRCount>
+          <Filename>.\lab0_p1.s</Filename>
+          <ExecCommand></ExecCommand>
+          <Expression>0x0000044A</Expression>
         </Bp>
       </Breakpoint>
       <Tracepoint>

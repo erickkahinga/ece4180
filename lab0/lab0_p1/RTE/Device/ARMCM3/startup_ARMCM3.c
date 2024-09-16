@@ -119,6 +119,7 @@ extern const VECTOR_TABLE_Type __VECTOR_TABLE[240];
 __NO_RETURN void Reset_Handler(void)
 {
   SystemInit();                             /* CMSIS System Initialization */
+
   __PROGRAM_START();                        /* Enter PreMain (C library entry point) */
 }
 

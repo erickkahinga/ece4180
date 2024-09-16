@@ -12,7 +12,7 @@ answer SPACE 4 ;where you store the answer at the end
 FIBONACCI
         MOV r4, #1			;init vars to 1
 		MOV r5, #1
-		MOV r7, #2			;start index at 3 b/c were calculating fib numbers from 3 to r1
+		MOV r7, #3			;start index at 3 b/c were calculating fib numbers from 3 to r1
 		
 LOOP
 		ADD r7, r7, #1
@@ -23,21 +23,20 @@ LOOP
 		BLE LOOP
 		
 		MOV r0, r6			;R6 holds the Nth fib number. R0 returns the Nth fib num
-		STR r6, [r1]
+		STR r0, [r1]
 		
 		B DONE
 				
 		
 __main
-		MOV r0, #0			;input parameter for subroutine(Nth fib number)
+		MOV r0, #6			;input parameter for subroutine(Nth fib number)
 		
-		LDR r1, answer		;load memory address of answer into r1
+		LDR r1, =answer		;load memory address of answer into r1	
 		
 		CMP r0, #15			;branch to DONE if R0 > 15
 		BGT DONE
 		
 		CMP r0, #2			;branch to FIBOANCCI if R0 > 2
-		PUSH {r0, r1}
 		BGT FIBONACCI
 		
 		;if r0 (Nth fib number) is <= 2 we can automatically return since it is the base for fib sequence
@@ -64,5 +63,4 @@ EQUALS2
 		MOV r0, #1
 		STR r0, [r1]
 
-DONE
-		END
+DONE	B DONE
